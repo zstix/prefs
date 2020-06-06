@@ -8,18 +8,21 @@ import potpourri from "../data/potpourri";
 import foodAndDrink from "../data/food-and-drink";
 import people from "../data/people";
 
+const getItems = (arr) => shuffle(arr).slice(0, 4);
+const getItem = (arr) => shuffle(arr).slice(-1);
+
 const getCategories = () => [
-  { name: "Activities", options: shuffle(activities).slice(0, 4) },
-  { name: "Potpourri", options: shuffle(potpourri).slice(0, 4) },
-  { name: "Food & Drink", options: shuffle(foodAndDrink).slice(0, 4) },
-  { name: "People (2020)", options: shuffle(people).slice(0, 4) },
+  { name: "Activities", options: getItems(activities) },
+  { name: "Potpourri", options: getItems(potpourri) },
+  { name: "Food & Drink", options: getItems(foodAndDrink) },
+  { name: "People (2020)", options: getItems(people) },
   {
     name: "One of Each",
     options: shuffle([
-      shuffle(activities).slice(-1),
-      shuffle(potpourri).slice(-1),
-      shuffle(foodAndDrink).slice(-1),
-      shuffle(people).slice(-1),
+      getItem(activities),
+      getItem(potpourri),
+      getItem(foodAndDrink),
+      getItem(people),
     ]),
   },
 ];
