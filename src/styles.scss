@@ -16,6 +16,11 @@ h3 {
 
 .wrapper {
   display: flex;
+  flex-direction: row-reverse;
+
+  @media (max-width: 800px) {
+    display: block;
+  }
 
   > div {
     flex: 1;
@@ -24,8 +29,16 @@ h3 {
 
 .instructions {
   margin-right: 1rem;
+
+  @media (max-width: 800px) {
+    margin: 0;
+  }
 }
 
 .categories {
   margin-left: 1rem;
+
+  @media (max-width: 800px) {
+    margin: 0;
+  }
 }
