@@ -1,0 +1,2 @@
+body{margin:20px;padding:0;font-size:18px;line-height:1.6;font-family:sans-serif;color:#444}h1,h2,h3{line-height:1.2;font-weight:400}.wrapper{display:flex;flex-direction:row-reverse}@media (max-width:800px){.wrapper{display:block}}.wrapper>div{flex:1}.instructions{margin-right:1rem}@media (max-width:800px){.instructions{margin:0}}.categories{margin-left:1rem}@media (max-width:800px){.categories{margin:0}}.categories h2{margin-bottom:0}.categories ul{margin-top:0;padding-left:2rem}
+/*# sourceMappingURL=src.21d8980c.css.map */
