@@ -12,7 +12,7 @@ const getCategories = () => [
   { name: "Activities", options: shuffle(activities).slice(0, 4) },
   { name: "Potpourri", options: shuffle(potpourri).slice(0, 4) },
   { name: "Food & Drink", options: shuffle(foodAndDrink).slice(0, 4) },
-  { name: "People", options: shuffle(people).slice(0, 4) },
+  { name: "People (2020)", options: shuffle(people).slice(0, 4) },
   {
     name: "One of Each",
     options: shuffle([
