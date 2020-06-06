@@ -1,8 +1,9 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Categories = ({ data }) => (
+const Categories = ({ data, update }) => (
   <div className="categories">
+    <button onClick={update}>Refresh</button>
     {data.map((cat, i) => (
       <div key={i}>
         <h2>{cat.name}</h2>
@@ -18,6 +19,7 @@ const Categories = ({ data }) => (
 
 Categories.propTypes = {
   data: PropTypes.array.isRequired,
+  update: PropTypes.func,
 };
 
 export default Categories;
