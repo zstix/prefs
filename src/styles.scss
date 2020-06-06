@@ -6,3 +6,26 @@ body {
   font-family: sans-serif;
   color: #444;
 }
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.wrapper {
+  display: flex;
+
+  > div {
+    flex: 1;
+  }
+}
+
+.instructions {
+  margin-right: 1rem;
+}
+
+.categories {
+  margin-left: 1rem;
+}
