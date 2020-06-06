@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import App from "./components/App";
 
-const App = () => <React.Fragment>Personal Preference!</React.Fragment>;
+import "./styles.scss";
 
 const $container = document.getElementById("app");
 ReactDOM.render(<App />, $container);
